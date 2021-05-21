@@ -1,9 +1,10 @@
 import React from "react";
+import Cards from "./Cards";
 
 function Loginform() {
   return (
     <div>
-      <h1>hey</h1>
+      <Cards />
     </div>
   );
 }
