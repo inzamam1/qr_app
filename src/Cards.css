@@ -1,12 +1,22 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito";
 }
 
 .card {
   margin: 20px;
   height: 280px;
   width: 280px;
-  background-color: #0b85a2;
+  background: #314755; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #26a0da,
+    #346280
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #26a0da,
+    #314755
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 50%;
   cursor: pointer;
   align-items: center;
@@ -22,6 +32,7 @@ body {
   transition: 150ms;
   transform: perspective(1000px) rotateY(var(--rotate-y, 0))
     translateY(var(--translate-y, 0));
+  z-index: -1;
 }
 
 .card:hover {
