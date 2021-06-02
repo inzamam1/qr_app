@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
 import "./Cards.css";
 import Cardsflip from "./Cardsflip";
 import { db } from "./firebase.js";
+import Home from "./Home.js";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 
 function Cards() {
   const [posts, setPosts] = useState([]);
@@ -22,11 +24,13 @@ function Cards() {
   ];
 
   return (
+
     <div className="grid">
       {cardInfo.map((card) => {
         return <Cardsflip card={card} />;
       })}
     </div>
+
   );
 }
 

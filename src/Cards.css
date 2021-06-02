@@ -3,9 +3,9 @@ body {
 }
 
 .card {
-  /* margin: 20px; */
-  height: 280px;
-  width: 280px;
+  margin: 20px;
+  height: 260px;
+  width: 260px;
   background: #314755; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to bottom,
@@ -33,6 +33,7 @@ body {
   transform: perspective(1000px) rotateY(var(--rotate-y, 0))
     translateY(var(--translate-y, 0));
   z-index: -1;
+  margin-top: 35%;
 }
 
 .card:hover {
@@ -62,12 +63,13 @@ body {
 
 .grid {
   min-height: 100%;
-  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-top: 130px;
+  margin-top: 25%;
   justify-content: center;
-  /* margin-left: 135px; */
+  align-items: center;
+  margin: 110px;
+  display: grid;
 }
 
 .grid > div {
