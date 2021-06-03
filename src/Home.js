@@ -1,15 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { db } from "./firebase";
+import React, { useState } from "react";
+
 import Navbar from "./Navbar";
 import Cards from "./Cards";
 import "./Home.css";
 
-
 function Home({ user }) {
-  const [posts, setPosts] = useState([]);
-  let date = new Date('1980-01-1');
-
-
+  const [posts] = useState([]);
 
   if (navigator.onLine) {
     return (
@@ -33,8 +29,7 @@ function Home({ user }) {
         </div>
       </div>
     );
-  } 
+  }
 }
 
 export default Home;
-
