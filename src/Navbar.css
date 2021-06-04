@@ -109,3 +109,33 @@
   .Sidebar_name{
     font-size: 0.5rem;
   }
+
+
+
+  #bottom_navbar {
+    height: 10%;
+    background-color: rgb(243, 235, 235);
+    position: fixed; /* Make it stick/fixed */
+    bottom: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: bottom 0.3s; /* Transition effect when sliding down (and up) */
+  }
+  
+  /* Style the navbar links */
+  #bottom_navbar a {
+
+    color: rgb(24, 79, 231);
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    display:inline-block;
+    border-radius: 360px;
+    background: #f0f0f0;
+    box-shadow:  17px 17px 36px #b9b9b9,
+                 -17px -17px 36px #ffffff;    
+  }
+  
+a{
+  font-weight: 600;
+  font-size: larger;
+}
