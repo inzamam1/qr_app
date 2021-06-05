@@ -9,224 +9,77 @@
   margin: auto;
 }
 
-.user_icon {
-  width: 50px;
-  margin-top: -59px;
-  margin-right: 15px;
-}
-
-.menu-bars {
-  margin-left: 2rem;
-  font-size: 1.7rem;
-  background: none;
-  margin-top: 20px;
-}
-
-.nav-menu {
-  background-color: #000000;
-  width: 250px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  margin-top: 15px;
-  margin-left: -10px;
-  left: -100%;
-  transition: 850ms;
-}
-
-.nav-menu.active {
-  left: 0;
-  transition: 350ms;
-}
-
-.nav-text {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 8px 0px 8px 16px;
-  list-style: none;
-  height: 50px;
-}
-
-.nav-text a {
-  text-decoration: none;
-  color: #f5f5f5;
-  font-size: 18px;
-  width: 95%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0 16px;
-  border-radius: 4px;
-}
-
-.nav-text a:hover {
-  background: #314755; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #26a0da,
-    #346280
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #26a0da,
-    #314755
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.nav-menu-items {
-  width: 100%;
-}
-
-.navbar-toggle {
-  background-color: #000000;
-  width: 100%;
-  height: 65px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-span {
-  margin-left: 16px;
-}
-
-.username {
-  margin-top: -14px;
-  margin-left: 20px;
-  margin-right: 20px;
-  color: #f1f0f0;
-  font-size: small;
-  font-family: "Nunito", sans-serif;
-}
-.Sidebar_name {
-  font-size: 0.5rem;
-}
-
-#bottom_navbar {
-  height: 10%;
-  background-color: rgb(243, 235, 235);
-  position: fixed; /* Make it stick/fixed */
-  bottom: 0; /* Stay on top */
-  width: 100%; /* Full width */
-  transition: bottom 0.3s; /* Transition effect when sliding down (and up) */
-}
-
-/* Style the navbar links */
-#bottom_navbar a {
-  color: rgb(24, 79, 231);
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 360px;
-  background: #f0f0f0;
-  box-shadow: 17px 17px 36px #b9b9b9, -17px -17px 36px #ffffff;
-}
-
-a {
-  font-weight: 600;
-  font-size: larger;
-}
 
 .navicon {
   width: 100px;
 }
 
+
 .user_icon {
   width: 50px;
   margin-top: -59px;
   margin-right: 15px;
 }
 
-.menu-bars {
-  margin-left: 2rem;
-  font-size: 1.7rem;
-  background: none;
-  margin-top: 20px;
-}
-
-.nav-menu {
-  background-color: #000000;
-  width: 250px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  margin-top: 15px;
-  margin-left: -10px;
-  left: -100%;
-  transition: 850ms;
-}
-
-.nav-menu.active {
-  left: 0;
-  transition: 350ms;
-}
-
-.nav-text {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 8px 0px 8px 16px;
-  list-style: none;
-  height: 50px;
-}
-
-.nav-text a {
-  text-decoration: none;
-  color: #f5f5f5;
-  font-size: 18px;
-  width: 95%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0 16px;
-  border-radius: 4px;
-}
-
-.nav-text a:hover {
-  background: #314755; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #26a0da,
-    #346280
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #26a0da,
-    #314755
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.nav-menu-items {
-  width: 100%;
-}
-
-.navbar-toggle {
-  background-color: #000000;
-  width: 100%;
-  height: 65px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 span {
-  margin-left: 16px;
+  margin-left: 30px;
 }
 
-.username {
-  margin-top: -14px;
-  margin-left: 20px;
-  margin-right: 20px;
-  color: #f1f0f0;
-  font-size: small;
-  font-family: "Nunito", sans-serif;
+#bnb {
+  height: 6%;
+  background-color: #e6e9ec;
+  position: fixed; /* Make it stick/fixed */
+  bottom: 0; /* Stay at the bottom */
+  width: 100%; /* Full width */
+  transition: bottom 0.3s; /* Transition effect when sliding down (and up) */
+  padding-top: 20px ;
+  padding-bottom: 20px;
 }
-.Sidebar_name {
-  font-size: 0.5rem;
+
+
+.bottom_navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  position: relative;
+  transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+  border-radius: 0px;
 }
+
+.btn{
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  background: #e0e5ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  box-shadow:
+   /* -7px -7px 20px 0px #fff9, */
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,
+   inset 0px 0px 0px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,       
+   inset 0px 0px 0px 0px #0001;
+ transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+  font-size: 20px;
+  font-weight: bold;
+  color: #2e81a0;
+  text-decoration: none;
+}
+.btn:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+}
+
+
+

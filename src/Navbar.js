@@ -4,17 +4,20 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar({ username }) {
+
   /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-  // var prevScrollpos = window.pageYOffset;
-  // window.onscroll = function() {
-  //   var currentScrollPos = window.pageYOffset;
-  //   if (prevScrollpos > currentScrollPos) {
-  //     document.getElementById("navbar").style.top = "0";
-  //   } else {
-  //     document.getElementById("navbar").style.top = "-50px";
-  //   }
-  //   prevScrollpos = currentScrollPos;
-  // }
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("bnb").style.bottom = "0";
+    } else {
+      document.getElementById("bnb").style.bottom = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
+
   return (
     <div>
       <nav className="navbar">
@@ -41,13 +44,12 @@ function Navbar({ username }) {
         </div>
       </nav>
 
-      <div id="bottom_navbar">
-        <a href="#home">Home</a>
-        <span></span>
-        <a href="#news">News</a>
-        <span></span>
-        <a href="#contact">Contact</a>
-      </div>
+    <div class ="bottom_navbar" id="bnb">
+    <a href="#" class="btn">Home</a>
+    <a href="#" class="btn">News</a>
+    <a href="#" class="btn">Menu</a>
+    <a href="#" class="btn">Profile</a>
+    </div>
     </div>
   );
 }

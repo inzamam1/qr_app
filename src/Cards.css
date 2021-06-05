@@ -3,9 +3,9 @@ body {
 }
 
 .card {
-  margin: 20px;
-  height: 260px;
-  width: 260px;
+  margin: -40px;
+  height: 250px;
+  width: 250px;
   background: #314755; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to bottom,
@@ -33,7 +33,7 @@ body {
   transform: perspective(1000px) rotateY(var(--rotate-y, 0))
     translateY(var(--translate-y, 0));
   z-index: -1;
-  margin-top: 35%;
+  margin-top: 50%;
 }
 
 .card:hover {
