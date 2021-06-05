@@ -4,19 +4,17 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar({ username }) {
-
   /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
   var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
+  window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("bnb").style.bottom = "0";
     } else {
-      document.getElementById("bnb").style.bottom = "-50px";
+      document.getElementById("bnb").style.bottom = "-100px";
     }
     prevScrollpos = currentScrollPos;
-  }
-
+  };
 
   return (
     <div>
@@ -44,12 +42,12 @@ function Navbar({ username }) {
         </div>
       </nav>
 
-    <div class ="bottom_navbar" id="bnb">
-    <a href="#" class="btn">Home</a>
-    <a href="#" class="btn">News</a>
-    <a href="#" class="btn">Menu</a>
-    <a href="#" class="btn">Profile</a>
-    </div>
+      <div class="bottom_navbar" id="bnb">
+        <btn class="btn">Home</btn>
+        <btn class="btn">News</btn>
+        <btn class="btn">Menu</btn>
+        <btn class="btn">Profile</btn>
+      </div>
     </div>
   );
 }
