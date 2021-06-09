@@ -20,7 +20,7 @@
 }
 
 span {
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 
 #bnb {
@@ -31,7 +31,7 @@ span {
   width: 100%; /* Full width */
   transition: bottom 0.3s; /* Transition effect when sliding down (and up) */
   padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .bottom_navbar {
