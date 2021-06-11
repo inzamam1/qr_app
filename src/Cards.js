@@ -1,5 +1,6 @@
 import "./Cards.css";
-
+import "./Home.css";
+import Navbar from "./Navbar";
 import { db } from "./firebase.js";
 
 import React, { useState, useEffect } from "react";
@@ -68,28 +69,33 @@ function Cards() {
   ];
 
   return (
-    <div className="grid">
-      {cardInfo.map((card) => {
-        //The below return function maps each card to its table with proper css.
-        return (
-          <div>
-            <div
-              className="card"
-              onClick={() => {
-                if (window.confirm("Are you sure you want to remove?")) {
-                  deletes();
-                }
-              }}
-            >
-              {card.text.length === 0 ? (
-                <div className="front">No Orders yet</div>
-              ) : (
-                <div className="front">{card.text}</div>
-              )}
-            </div>
-          </div>
-        );
-      })}
+    <div>
+      <Navbar />
+      <div className="home">
+        <div className="grid">
+          {cardInfo.map((card) => {
+            //The below return function maps each card to its table with proper css.
+            return (
+              <div>
+                <div
+                  className="card"
+                  onClick={() => {
+                    if (window.confirm("Are you sure you want to remove?")) {
+                      deletes();
+                    }
+                  }}
+                >
+                  {card.text.length === 0 ? (
+                    <div className="front">No Orders yet</div>
+                  ) : (
+                    <div className="front">{card.text}</div>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 }

@@ -43,9 +43,13 @@ function Navbar({ username }) {
       </nav>
 
       <div class="bottom_navbar" id="bnb">
-        <btn class="btn">Home</btn>
-        <btn class="btn">News</btn>
+        <btn class="btn">
+          <Link to="/">Home</Link>
+        </btn>
         <btn class="btn">Menu</btn>
+        <btn class="btn">
+          <Link to="/my_orders">my orders</Link>
+        </btn>
         <btn class="btn">Profile</btn>
       </div>
     </div>

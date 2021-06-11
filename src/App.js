@@ -2,6 +2,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Home.js";
+import Cards from "./Cards.js";
 
 function App() {
   const [isLoading, setLoading] = useState(true);
@@ -28,8 +29,12 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route exact path="/" component={Home}>
+          <Route path="/my_orders">
+            <Cards />
+          </Route>
+          <Route path="/">
             <Home />
+            {/* <Cards /> */}
           </Route>
         </Switch>
       </div>
