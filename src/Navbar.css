@@ -53,8 +53,8 @@ span {
 }
 
 .btn {
-  height: 75px;
-  width: 75px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
   background: #e0e5ec;
   display: flex;
@@ -79,4 +79,18 @@ span {
     -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
     inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+}
+
+
+a:link{
+  color: #005b7c;
+  text-decoration: none;
+}
+
+a:visited{
+  color: #005b7c;
+}
+
+a:active{
+  color: #005b7c;
 }

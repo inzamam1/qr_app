@@ -44,11 +44,11 @@ function Navbar({ username }) {
 
       <div class="bottom_navbar" id="bnb">
         <btn class="btn">
-          <Link to="/">Home</Link>
+          <Link to="/"><a>Home</a></Link>
         </btn>
         <btn class="btn">Menu</btn>
         <btn class="btn">
-          <Link to="/my_orders">my orders</Link>
+          <Link to="/my_orders"> <a>My Orders</a></Link>
         </btn>
         <btn class="btn">Profile</btn>
       </div>
