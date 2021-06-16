@@ -1,0 +1,13 @@
+.menu__container {
+  min-height: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 25%;
+  justify-content: center;
+  align-items: center;
+  margin: 110px;
+  display: grid;
+}
+.menu__text {
+  font-family: "Nunito";
+}

@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "./Navbar";
 import "./Home.css";
-
+import Menu from "./Menu";
 function Home({ user }) {
   if (navigator.onLine) {
     return (
       <div>
         <Navbar username={user} />
-        <h1 className="home_queue">This is homepage</h1>
+        <Menu />
       </div>
     );
   }
