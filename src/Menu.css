@@ -1,4 +1,4 @@
-.menu__container {
+/* .menu__container {
   min-height: 100%;
   flex-wrap: wrap;
   flex-direction: column;
@@ -10,4 +10,104 @@
 }
 .menu__text {
   font-family: "Nunito";
+} */
+
+
+.section { 
+  position: relative;
+  height: 140vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+  overflow: hidden;
 }
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.static {
+  /* background-image: url('https://images.pexels.com/photos/4912400/pexels-photo-4912400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
+  background-size: cover;
+
+}
+
+.bg1::after {
+  background-image: url('https://www.ppt-backgrounds.net/thumbs/food--wood-template-templates.jpg');
+  background-size: cover;
+}
+
+.bg2::after {
+  background-image: url('https://image.freepik.com/free-photo/front-view-black-plate-powdered-choco-background_140725-14322.jpg');
+  background-size: cover;
+}
+
+#parallax {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://www.pngkey.com/png/full/123-1230165_singapore-pizza-hut-menu-pizza-hut-seafood-deluxe.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+}
+
+#parallax2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  object-fit: contain;
+  background-image: url(https://img.pngio.com/ice-cream-sandwich-day-ice-cream-sandwich-png-400_278.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+}
+
+.parallax2::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+h1 {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Arial";
+  text-transform: uppercase;
+  opacity: 0;
+  font-size: 70px;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  /* position: fixed; */
+  background-size: cover;
+  background-color: black;
+  right: 20;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+
