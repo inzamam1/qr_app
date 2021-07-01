@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./Menu.css";
 import { db } from "./firebase.js";
 
-
 function Menu() {
   const [Menu, setMenu] = useState([]);
   useEffect(() => {
@@ -15,11 +14,11 @@ function Menu() {
       );
     });
   }, []);
-  Menu.map(({ menus, id }) => {
-    console.log(menus.itemName);
-  });
+  // Menu.map(({ menus, id }) => {
+  //   console.log(menus.itemName);
+  // });
 
-  (function() {
+  (function () {
     // Add event listener
     document.addEventListener("mousemove", parallax);
     const elem = document.querySelector("#parallax");
@@ -35,38 +34,32 @@ function Menu() {
       // let x = `${_depth3}, ${_depth2}, ${_depth1}`;
       // console.log(x);
       // elem.style.backgroundPosition = x;
-  }
-
-})();
-
-
+    }
+  })();
 
   return (
     <div className="menu__container">
+      <section class="section static">
+        <div id="parallax1"></div>
+        <video id="myVideo" autoPlay loop src="wine.mp4" />
+      </section>
+      {/* //firebase */}
       {Menu.map(({ menus, id }) => {
         return (
           { id },
           (
             <div>
-            <section class="section parallax bg1">
-            <div id="parallax"></div>
+              {/* <section class="section parallax bg1"> */}
+              {/* <div id="parallax"> */}
+              <img src={menus.imageBg} />
 
-            <h1>{menus.itemName}</h1>
+              <img src={menus.imageUrl} />
+              {/* </div> */}
+              {/* <h1>{menus.itemName}</h1> */}
               {/* <img src={menus.imageUrl} /> */}
               {/* <h2>{menus.description}</h2> */}
               {/* <h2>{menus.Price}</h2> */}
-            </section>
-            <section class="section static">
-             <div id="parallax1"></div>
-             <video id="myVideo" autoPlay loop src="wine.mp4"/>
-            </section>
-            <section class="section parallax bg2">
-            <div id="parallax2"></div>
-            <h1>{menus.itemName}</h1>
-              {/* <img src={menus.imageUrl} /> */}
-              {/* <h2>{menus.description}</h2> */}
-              {/* <h2>{menus.Price}</h2> */}
-            </section>
+              {/* </section> */}
             </div>
           )
         );
