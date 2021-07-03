@@ -5,14 +5,17 @@ import { db } from "./firebase.js";
 function Menu() {
   const [Menu, setMenu] = useState([]);
   useEffect(() => {
-    db.collection("menu").onSnapshot((snapshot) => {
-      setMenu(
-        snapshot.docs.map((doc) => ({
-          id: doc.id,
-          menus: doc.data(),
-        }))
-      );
-    });
+    db.collection("menu")
+      .doc("7TrkfHWkNbSNHiUTKbIx")
+      .collection("cafe_test")
+      .onSnapshot((snapshot) => {
+        setMenu(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            menus: doc.data(),
+          }))
+        );
+      });
   }, []);
   // Menu.map(({ menus, id }) => {
   //   console.log(menus.itemName);
@@ -39,29 +42,35 @@ function Menu() {
 
   return (
     <div className="menu__container">
-      <section class="section static">
+      {/* Video part to be accomadated later */}
+      {/* <section class="section static">
         <div id="parallax1"></div>
         <video id="myVideo" autoPlay loop src="wine.mp4" />
-      </section>
+      </section> */}
       {/* //firebase */}
-      {Menu.map(({ menus, id }) => {
+      {Menu.map(({ menus }) => {
         return (
-          { id },
-          (
-            <div>
-              {/* <section class="section parallax bg1"> */}
-              {/* <div id="parallax"> */}
-              <img src={menus.imageBg} />
-
+          //Change the css for this part
+          <div class="section">
+            {/* This is for the Background image */}
+            {menus.itemType === "Pizza" ? (
+              <img src="Pizza.jpg" />
+            ) : (
+              <img src="Test.jpg" />
+            )}
+            {/* This is for the image to be positioned on the top */}
+            <div class="centered">
               <img src={menus.imageUrl} />
-              {/* </div> */}
-              {/* <h1>{menus.itemName}</h1> */}
-              {/* <img src={menus.imageUrl} /> */}
-              {/* <h2>{menus.description}</h2> */}
-              {/* <h2>{menus.Price}</h2> */}
-              {/* </section> */}
             </div>
-          )
+
+            {/* <img src={menus.imageUrl} /> */}
+            {/* </div> */}
+            {/* <h1>{menus.itemName}</h1> */}
+            {/* <img src={menus.imageUrl} /> */}
+            {/* <h2>{menus.description}</h2> */}
+            {/* <h2>{menus.Price}</h2> */}
+            {/* </section> */}
+          </div>
         );
       })}
     </div>

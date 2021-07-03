@@ -11,7 +11,18 @@
 .menu__text {
   font-family: "Nunito";
 } */
-
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
 .section {
   position: relative;
   height: 140vh;
