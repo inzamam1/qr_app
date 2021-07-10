@@ -54,6 +54,7 @@
 .bg1::after {
   /* background-image: url("https://www.ppt-backgrounds.net/thumbs/food--wood-template-templates.jpg"); */
   background-size: cover;
+  z-index: -2;
 }
 
 .bg2::after {

@@ -28,7 +28,7 @@ span {
 
 #bnb {
   height: 6%;
-  background-color: #110606dc;
+  /* background-color: #110606dc; */
   position: fixed; /* Make it stick/fixed */
   bottom: 0; /* Stay at the bottom */
   width: 100%; /* Full width */
@@ -50,6 +50,7 @@ span {
   position: relative;
   transition: box-shadow 0.6s cubic-bezier(0.79, 0.21, 0.06, 0.81);
   border-radius: 0px;
+  z-index: 100;
 }
 
 .btn {
